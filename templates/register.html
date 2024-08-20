@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Face</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Face Recognition Logo" class="logo">
+        <h1>Register New Face</h1>
+    </header>
+    <main>
+        <form id="registerForm" class="form">
+            <input type="text" id="name" placeholder="Employee Name" required>
+            <button type="button" onclick="startRegistration()">Start Registration</button>
+        </form>
+        <div id="camera" class="camera">
+            <video id="video" autoplay></video>
+            <canvas id="canvas" style="display:none;"></canvas>
+        </div>
+        <div id="status" class="status"></div>
+        <a href="/" class="button">Back to Home</a>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

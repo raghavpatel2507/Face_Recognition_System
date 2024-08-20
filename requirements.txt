@@ -1,0 +1,8 @@
+opencv-python
+numpy==1.26.4
+pillow
+cmake
+dlib
+face_recognition
+gunicorn
+flask

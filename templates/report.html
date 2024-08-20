@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Face Recognition Logo" class="logo">
+        <h1>Attendance Report</h1>
+    </header>
+    <main>
+        <div id="attendance" class="attendance"></div>
+        <a href="/dashboard" class="button">Back to Dashboard</a>
+    </main>
+    <script>
+        fetch('/get_attendance')
+            .then(response => response.json())
+            .then(data => {
+                const attendanceContainer = document.getElementById('attendance');
+                attendanceContainer.innerHTML = data.logs.join('<br>');
+            });
+    </script>
+</body>
+</html>

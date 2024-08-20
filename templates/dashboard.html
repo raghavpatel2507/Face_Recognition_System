@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Face Recognition Logo" class="logo">
+        <h1>Dashboard</h1>
+    </header>
+    <main>
+        <div id="logs" class="logs"></div>
+        <a href="/logout" class="button">Logout</a>
+        <a href="/" class="button">Back to Home</a>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+    text-align: center;
+}
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+}
+.logo {
+    width: 120px;
+    vertical-align: middle;
+}
+h1 {
+    margin: 0;
+}
+main {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+button, .button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+button:hover, .button:hover {
+    background-color: #0056b3;
+}
+a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+}
+a:hover {
+    text-decoration: underline;
+}
+.camera {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+}
+video {
+    width: 100%;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+}
+canvas {
+    display: none;
+}
+.result, .status {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+.form {
+    margin-bottom: 20px;
+}
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Adjust width to fit the button */
+}
+.employee-list {
+    list-style-type: none;
+    padding: 0;
+}
+.employee-list li {
+    background-color: #e9ecef;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.employee-list button {
+    background-color: #dc3545;
+}
+.employee-list button:hover {
+    background-color: #c82333;
+}
+#search {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
